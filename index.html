@@ -18,9 +18,9 @@
                     <div class="center">
                         <nav>
                         <ul>
-                            <li> <div class="animated-border"></div> <a  href="#"> Biography </a> </li>
-                            <li> <div class="animated-border"></div> <a href="#"> Discography </a> </li>
-                            <li> <div class="animated-border"></div> <a href="#"> Gallery </a> </li>
+                            <li> <div class="animated-border"></div> <a goto="biografia" href="#"> Biography </a> </li>
+                            <li> <div class="animated-border"></div> <a goto="discografia" href="#"> Discography </a> </li>
+                            <li> <div class="animated-border"></div> <a goto="galeria" href="#"> Gallery </a> </li>
                         </ul>
                     </nav>
                  </div><!--center-->
@@ -32,7 +32,7 @@
         </div><!--parallax-filter-->        
     </header><!--header-master-parallax-->   
     
-    <section class="biografia">
+    <section animate-menu="" class="biografia">
 
         <div class="main-title">
             <div class="border-main-title">
@@ -80,7 +80,7 @@
         </div><!--parallax2-filter-->
     </section><!--parallax2-->
     
-    <section class="discografia">
+    <section animate-menu="" class="discografia">
         <div class="main-title">
             <div class="border-main-title">
                 <h2>Discography</h2>
@@ -150,7 +150,7 @@
         </div><!--parallax3-filter-->
     </section><!--parallax3-->
 
-    <section class="galeria">
+    <section animate-menu="" class="galeria">
         <div class="main-title">
             <div class="border-main-title">
                 <h2>Gallery</h2>
@@ -182,9 +182,31 @@
         </div><!--center flex-row-->
     </section><!--galeria-->
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                </div>
+
+                <div class="modal-body">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <h2> João Pedro Buzatti Mendes <i class="far fa-registered"></i> </h2>
     </footer>
-
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>
