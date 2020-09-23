@@ -18,6 +18,25 @@
     flex-wrap: wrap;
 }
 
+
+/** BOOTSTRAP MODAL */
+.close span{
+    font-size: 30px;
+}
+
+.modal-content{background-color: rgb(200,200,200);}
+
+.modal-content button{
+    outline: 0;
+}
+
+.modal-header{
+    
+    border-bottom: 0;
+}
+/*----------*/
+
+
 /*----- MAIN TITLE -----*/
 
 .main-title{
@@ -66,7 +85,8 @@ div.parallax-filter{
 
 div.parallax-filter header{
     /*APPLY SCROLL ANIMATION (TRANSITION: 1 S)*/
-    background-color: rgb(0,0,0);
+    background-color: transparent;
+    transition: 0.6s;
     width: 100%;
     position: fixed;
     padding: 6px 2%;
@@ -80,7 +100,6 @@ header .center nav ul{
 header .center nav ul li {
     display: inline-block;
     margin-left: 80px;
-    border-bottom: 3px solid black;
     position: relative;
 }
 header .animated-border{
@@ -104,6 +123,7 @@ header .center nav ul li:hover .animated-border{
     -ms-transform: scaleX(1); 
     -o-transform: scaleX(1); 
 }
+
 header .center nav ul li a{
     text-decoration: none;
     color: white;
