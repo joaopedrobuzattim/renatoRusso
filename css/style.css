@@ -84,7 +84,6 @@ div.parallax-filter{
 }
 
 div.parallax-filter header{
-    /*APPLY SCROLL ANIMATION (TRANSITION: 1 S)*/
     background-color: transparent;
     transition: 0.6s;
     width: 100%;
@@ -92,12 +91,13 @@ div.parallax-filter header{
     padding: 6px 2%;
     z-index: 99;
     text-align: right;
+    height: 45px;
 }
-header .center nav ul{
+header .center nav.desktop-menu ul{
     margin: 0;
 }
 
-header .center nav ul li {
+header .center nav.desktop-menu ul li {
     display: inline-block;
     margin-left: 80px;
     position: relative;
@@ -114,7 +114,7 @@ header .animated-border{
     -ms-transform: scaleX(0); 
     -o-transform: scaleX(0); 
 }
-header .center nav ul li:hover .animated-border{
+header .center nav.desktop-menu ul li:hover .animated-border{
     transition: 0.6s;
     transform-origin: center;
     transform: scaleX(1);   
@@ -124,13 +124,37 @@ header .center nav ul li:hover .animated-border{
     -o-transform: scaleX(1); 
 }
 
-header .center nav ul li a{
+.header-master-parallax ul li a{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 2px;
+}
+
+header > .center{
+    position: relative;
+}
+
+nav.mobile-menu{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    position: fixed;
+}
+nav.mobile-menu ul{
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+.menu-mobile-icon{
+    display: none;
 }
 
 .header-title{
@@ -292,17 +316,20 @@ section.galeria{
 section.galeria .flex-row{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 4px;
     align-items: center;
 }
 section.galeria .flex-col{
     flex:25%;
     max-width: 25%;
+    padding-right: 0;
+    text-align: center;
 }
 section.galeria  .flex-col img{
     width: 80%;
     padding: 10px 0;
     margin: 5px 0;
+    display: inline-block;
 }
 
 section.galeria  .flex-col img:hover{
@@ -345,6 +372,7 @@ footer h2 i{
 
 /*----- RESPONSIVE -----*/
 
+
 @media screen and (max-width:1050px){
    
 
@@ -366,8 +394,8 @@ footer h2 i{
     }
         
     section.biografia .biography-img1{
-        width: 100%;
-       padding-top: 100%;
+    width: 100%;
+    padding-top: 100%;
     }
 
 
@@ -382,7 +410,7 @@ footer h2 i{
 
     .header-title h2{
         font-weight: 300;
-        font-size: 60px;
+        font-size: 55px;
         color: rgba(200,200,200,0.8);
     
     }
@@ -393,7 +421,23 @@ footer h2 i{
     section.parallax3 q{
         display: none;
     }
+    .menu-mobile-icon{
+        display: block;
+        text-align: right;
+        padding: 0 10px;
+    }
+    .menu-mobile-icon i {
+        cursor: pointer;
+        font-size: 29px;
+        color: white;
+    }
+
+    nav.desktop-menu{
+        display: none;
+    }
 }
+
+    
 
 @media screen and (max-width: 600px){
     section.galeria .flex-col{
