@@ -1,2 +1,9 @@
-<p>Project created for the CompAct's Trainee Process 2020/2 using HTMLS5, CSS3, Bootstrap4 and JS to crate a clean and responsive layout to describe Renato Russo's life.</p>
+<p> My fisrt web project! Static page using <b> HTML5, CSS3 and JavaScript </b> describing Renato Russo's live!  </p>
 
+<hr/>
+
+![Description 1](images/md/MD1)
+
+<hr/>
+
+![Description 2](images/md/MD2)
