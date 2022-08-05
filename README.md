@@ -1,4 +1,4 @@
-<p> My fisrt web project! Static page using <b> HTML5, CSS3 and JavaScript </b> describing Renato Russo's live!  </p>
+<p> HTML Project  </p>
 
 <hr/>
 
